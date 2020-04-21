@@ -1,11 +1,18 @@
-This is your first step.
+Vamos a comenzar explicacion qué es Portainer.
 
-## Task
+## ¿Qué es Portainer?
 
-This is an _example_ of creating a scenario and running a **command**
+[Portainer](https://www.portainer.io/) es una aplicación web que permite la gestión de todo lo que tiene que ver con Docker a través de una interfaz gráfica.
 
-`docker volume create portainer_data`{{execute}}
+![Dashboard de Portainer](/katacoda-scenarios/portainer/assets/dashboard-portainer.png)
 
-`docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer`{{execute}}
+Es decir, usándolo podemos olvidarnos de recordar comandos, además de acceder a información sobre los contenedores de un vistazo mucho más rápido e intuitivo.
 
-Accede en el puerto 9000: https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/
+En este pequeño curso de introducción veremos cómo:
+- Instalar Portainer
+- Gestionar imágenes
+- Gestionar contenedores
+- Gestionar redes
+- Gestionar almacenamiento
+
+¿Comenzamos?

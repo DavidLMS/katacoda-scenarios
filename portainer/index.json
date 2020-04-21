@@ -5,9 +5,30 @@
   "time": "2 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - Run Command",
+      "title": "1 - ¿Qué es Portainer?",
       "text": "step1.md"
-    }],
+    },
+	{
+	  "title": "2 - Instalación de Portainer",
+	  "text": "step2.md"
+	},
+	{
+	  "title": "3 - Gestión de imágenes",
+	  "text": "step3.md"
+	},
+	{
+	  "title": "4 - Gestión de contenedores",
+	  "text": "step4.md"
+	},
+	{
+	  "title": "5 - Gestión de redes",
+	  "text": "step5.md"
+	},
+	{
+	  "title": "6 - Gestión de almacenamiento",
+	  "text": "step6.md"
+	},
+	],
     "intro": {
       "text": "intro.md",
       "credits": ""
