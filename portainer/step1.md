@@ -1,7 +1,3 @@
-Vamos a comenzar explicacion qué es Portainer.
-
-## ¿Qué es Portainer?
-
 [Portainer](https://www.portainer.io/) es una aplicación web que permite la gestión de todo lo que tiene que ver con Docker a través de una interfaz gráfica.
 
 ![Dashboard de Portainer](/katacoda-scenarios/portainer/assets/dashboard-portainer.png)
