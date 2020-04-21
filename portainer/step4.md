@@ -26,6 +26,6 @@ Selecciona el contenedor 'servidorweb' y pulsa en 'Stop' para pararlo. Comprueba
 
 Ahora vamos a crear un contenedor de nuevo de la misma imagen, pero a través de comandos, para que compruebes cómo se hace:
 
-'docker run --name servidorweb -d -p 80:80'
+`docker run --name servidorweb -d -p 80:80 nginx`{{execute}}
 
 La única diferencia de este contenedor con el que creamos antes, es que no hemos puesto que se elimine al pararlo. Puedes comprobar que el servidor web está funcionando accediendo al puerto 80 en la web https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com.
