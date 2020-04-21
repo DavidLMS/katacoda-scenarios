@@ -30,3 +30,5 @@ Elige Local y pulsa en 'Connect'.
 Por último, aparecerá la ventana principal de Portainer:
 
 ![Página principal de Portainer](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/portainer/assets/principal-portainer.png)
+
+Haz click en 'Local', el único Endpoint disponible, para acceder a la gestión del mismo.
