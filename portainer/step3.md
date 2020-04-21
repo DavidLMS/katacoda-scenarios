@@ -2,7 +2,7 @@ En nuestra instalación de Docker podemos descargar tantas imágenes como espaci
 
 Podemos crear nuestras propias imágenes o descargar imágenes preparadas de algún registro como [Docker Hub](https://hub.docker.com). Ahí encontraremos imágenes preparadas de los servicios y aplicaciones más populares.
 
-En nuestra instancia de Portainer, accede al apartado ['images'](https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/#/images), para ver un listado de las imágenes descargadas en nuestra máquina.
+En nuestra instancia de Portainer, accede al apartado [images](https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/#/images), para ver un listado de las imágenes descargadas en nuestra máquina.
 
 ![Listado de imágenes](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/portainer/assets/images-portainer.png)
 
@@ -12,7 +12,7 @@ Vamos a descargar en la Terminal una nueva imagen de, por ejemplo, el servidor w
 
 `docker pull nginx`{{execute}}
 
-Veremos cómo aparece en el listado de Portainer si lo actualizamos.
+Veremos cómo aparece en el [listado](https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/#/images) de Portainer si lo actualizamos (el botón para actualizarlo está al lado del nombre en la pestaña).
 
 ![Listado de imágenes actualizado](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/portainer/assets/listado-actualizado-portainer.png)
 
@@ -20,7 +20,7 @@ Vamos a probar a descargar una imagen directamente desde la interfaz de Portaine
 
 ![Descarga de la imagen de Wordpress](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/portainer/assets/wordpress-portainer.png)
 
-Pulsamos en 'Pull the image' y esperamos a que se descargue. Podemos comprobarlo en el listado actualizado.
+Pulsamos en 'Pull the image' y esperamos a que se descargue. Podemos comprobarlo en el [listado](https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/#/images) actualizado.
 
 ![Listado de imágenes actualizado con Wordpress](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/portainer/assets/listado-actualizado2-portainer.png)
 
