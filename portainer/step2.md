@@ -18,12 +18,14 @@ Cuando entres por primera vez, pedirá que introduzcas un usuario y contraseña 
 
 Una vez los elijas, se mostrarán las opciones de conexión:
 
-![Conexión de Portainer](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/portainer/assets/user-pass-portainer.png)
+![Conexión de Portainer](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/portainer/assets/conexion-portainer.png)
 
 - Local. Esta opción te permite gestionar los contenedores del servidor en el que has instalado Portainer. Es la opción que vamos a elegir para continuar este curso.
 - Remote. Te permite gestionar los contenedores de un servidor remoto.
 - Agent. Te conectarte a un agente de Portainer dentro de un clúster Swarm.
 - Azure. A través de esta opción puedes gestionar contenedores de Azure.
+
+Elige Local y pulsa en 'Connect'.
 
 Por último, aparecerá la ventana principal de Portainer:
 
