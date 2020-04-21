@@ -1,8 +1,8 @@
 En nuestra instalación de Docker podemos descargar tantas imágenes como espacio de almacenamiento tengamos. Para que nos entendamos, una imagen de Docker es como tener una receta y acceso ilimitado a los ingredientes que queramos. Cuando arrancamos un contenedor, lo que hacemos en poner en práctica esa receta y sacar un plato.
 
-Podemos crear nuestras propias imágenes o descargar imágenes preparadas de algún registro como ![Docker Hub](https://hub.docker.com). Ahí encontraremos imágenes preparadas de los servicios y aplicaciones más populares.
+Podemos crear nuestras propias imágenes o descargar imágenes preparadas de algún registro como [Docker Hub](https://hub.docker.com). Ahí encontraremos imágenes preparadas de los servicios y aplicaciones más populares.
 
-En nuestra instancia de Portainer, accede al apartado !['images'](https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/#/images), para ver un listado de las imágenes descargadas en nuestra máquina.
+En nuestra instancia de Portainer, accede al apartado ['images'](https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/#/images), para ver un listado de las imágenes descargadas en nuestra máquina.
 
 ![Listado de imágenes](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/portainer/assets/images-portainer.png)
 
