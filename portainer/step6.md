@@ -1,10 +1,25 @@
+
+
 Acceder a volumes en interfaz gráfica.
 
 Acceder por comandos a nginx y descargar página web de ejemplo.
 
-Probar.
+docker exec -it servidorweb bash
+cd /usr/share/nginx/html
+rm *
+apt update
+apt install wget
+wget https://davidlms.github.io/
+exit
 
-Reiniciar contenedor y comprobar que ya no está.
+Probar.
+https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
+
+Recrear contenedor y comprobar que ya no está. (Si paro y enciendo se mantienen LOSDATOS)
+
+En containers recreate
+
+https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/ -> Puede tener que recargar navegador, o usar otro o modo incógnito.
 
 Crear volumen por interfaz gráfica
 
