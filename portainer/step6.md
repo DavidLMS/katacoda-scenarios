@@ -1,11 +1,15 @@
-This is your first step.
+Acceder a volumes en interfaz gráfica.
 
-## Task
+Acceder por comandos a nginx y descargar página web de ejemplo.
 
-This is an _example_ of creating a scenario and running a **command**
+Probar.
 
-`docker volume create portainer_data`{{execute}}
+Reiniciar contenedor y comprobar que ya no está.
 
-`docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer`{{execute}}
+Crear volumen por interfaz gráfica
 
-Accede en el puerto 9000: https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/
+Parar y borrar contenedor nginx.
+
+Crear uno nuevo con volume.
+
+Poner de nuevo web y reiniciar, comprobar que ya se mantiene.

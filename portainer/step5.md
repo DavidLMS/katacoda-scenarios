@@ -1,11 +1,19 @@
-This is your first step.
+Ver redes por interfaz gráfica y por comandos
 
-## Task
+ver la red bridged.
 
-This is an _example_ of creating a scenario and running a **command**
+Entrar por comando para hacer clickeable:
+apt update
+apt install net-tools
+apt install iputils-ping
 
-`docker volume create portainer_data`{{execute}}
+Hacer ping al contenedor del portainer.
 
-`docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer`{{execute}}
+Ir por interfaz gráfica a las redes y crear una.
 
-Accede en el puerto 9000: https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/
+Parar contenedor nginx por interfaz gráfica, dejar la red anterior y unirlo a la nueva.
+
+Arrancar contenedor por interfaz gráfica
+
+Acceder a consola por interfaz gráfica, mirar ip e intentar hacer ping al otro contenedor.
+
