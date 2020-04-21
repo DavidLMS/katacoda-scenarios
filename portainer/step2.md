@@ -10,7 +10,7 @@ Para iniciar una instancia de Portainer, solo nos queda ejecutar el siguiente co
 
 `docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer`{{execute}}
 
-La aplicación web de Portainer estará accesible en el puerto 9000 de nuestro servidor. Para acceder a la que hemos creado aquí, puedes darle a la pestaña 'Portainer' a la derecha de 'Terminal' o acceder en una nueva ventana en la dirección: https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/
+Una vez que termina, la aplicación web de Portainer estará accesible en el puerto 9000 de nuestro servidor. Para acceder a la que hemos creado aquí, puedes darle a la pestaña 'Portainer' a la derecha de 'Terminal' o acceder en una nueva ventana en la dirección: https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/
 
 Cuando entres por primera vez, pedirá que introduzcas un usuario y contraseña de administración:
 
