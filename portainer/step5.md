@@ -6,18 +6,18 @@ Para ver las redes en Portainer, accedemos al apartado [networks](https://[[HOST
 
 Por defecto, hay tres redes creadas por el sistema, el nombre es indiferente. De momento solamente nos interesa la columna 'Driver'. En Docker, las redes creadas pueden basarse en distintos controladores, los dos que más nos interesan ahora son:
 
-- bridge. Es el controlador por defecto. Si no se indica nada cuando se pone en marcha en el contenedor, se le ubica en una red de este controlador. Como puedes ver, se indica una subred en la red de este tipo. Crea una red aislada del anfitrión (donde está instalado Docker), que puede ser compartida por varios contenedores para comunicarse entre ellos.
+- bridge. Es el controlador por defecto. Si no se indica nada cuando se pone en marcha el contenedor, se le ubica en una red de este controlador. Como puedes ver, se indica una subred en la red de este tipo. Crea una red aislada del anfitrión (donde está instalado Docker), que puede ser compartida por varios contenedores para comunicarse entre ellos.
 - host. Elimina el aislamiento entre el contenedor y el anfitrión, usando directamente la misma red que el anfitrión, como si fuera otro equipo que formara parte de la misma.
 
 También puedes ver las redes creadas en la Terminal, usando el comando:
 
 `docker network ls`{{execute}}
 
-Haz click en la red bridged en Portainer para ver más detalles.
+Haz click en la red bridged del apartado [networks](https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/#/networks) en Portainer para ver más detalles.
 
 ![Detalles de la red bridged](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/portainer/assets/bridged-portainer.png)
 
-En el apartado 'Containers in network' puedes ver los contenedores asociados a esta red y su IP. Según se muestra en la imagen anterior, el contenedor servidorweb y portainer están en la misma subred. Vamos a comprobarlo haciendo ping desde servidorweb a portainer.
+En el bloque 'Containers in network' puedes ver los contenedores asociados a esta red y su IP. Según se muestra en la imagen anterior, el contenedor servidorweb y portainer están en la misma subred. Vamos a comprobarlo haciendo ping desde servidorweb a portainer.
 
 Para ello, ejecutamos el siguiente comando para acceder a una consola dentro del contenedor servidorweb:
 
@@ -28,8 +28,10 @@ Todo los comandos que pongamos a partir de ahora hasta poner 'exit' se ejecutar�
 Vamos a instalar los paquetes necesarios para poder usar ifconfig y ping:
 
 `apt update`{{execute}}
+
 `apt install net-tools`{{execute}}
-`apt install iputils-ping`{{execute}}
+
+`apt install iputils-ping -y`{{execute}}
 
 Comprueba ahora la IP que tiene el contenedor (aparecía dentro de la red bridged en Portainer):
 
@@ -37,7 +39,7 @@ Comprueba ahora la IP que tiene el contenedor (aparecía dentro de la red bridge
 
 Prueba a hacerle ping al contenedor portainer para comprobar que tienen conectividad:
 
-`ping 172.18.0.2`{{execute}}
+`ping -c 4 172.18.0.2`{{execute}}
 
 Salimos de la terminal del contenedor ejecutando:
 
@@ -73,7 +75,7 @@ Pulsamos en 'Join network'.
 
 Una vez estamos en la nueva red, ya no deberíamos tener conectividad con el contenedor portainer. Vamos a volver a hacerle ping para comprobarlo, pero esta vez accederemos a una consola del contenedor servidorweb por la interfaz gráfica de Portainer.
 
-Para ello, accedemos al apartado [containers](https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/#/containers).
+Para ello, primero pulsamos en 'Start' para arrancar el contenedor y después accedemos al apartado [containers](https://[[HOST_SUBDOMAIN]]-9000-[[KATACODA_HOST]].environments.katacoda.com/#/containers).
 
 ![Botón para acceder a la consola de servidorweb](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/portainer/assets/servidorweb-console-portainer.png)
 
@@ -87,7 +89,7 @@ Dejamos las opciones por defecto y pulsamos en 'Connect'.
 
 Nos aparecerá una consola en la interfaz y podremos intentar hacer ping a portainer escribiendo:
 
-ping 172.18.0.2
+ping -c 2 172.18.0.2
 
 Podrás comprobar que ahora no tiene conectividad, por lo que los contenedores están aislados en redes distintas. También puedes ejecutar el comando ifconfig para conocer la IP actual, que será una del rango que definimos en la red redNginx que creamos previamente.
 

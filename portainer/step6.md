@@ -37,7 +37,8 @@ Eliminamos los archivos que contiene:
 Y tendremos que poner ahí dentro una nueva página. Vamos a decargar una con wget, pero primero necesitamos instalarlo:
 
 `apt update`{{execute}}
-`apt install wget`{{execute}}
+
+`apt install wget -y`{{execute}}
 
 Una vez instalado, podemos utilizarlo para descargar el HTML de la página https://davidlms.github.io/:
 
@@ -73,16 +74,22 @@ A continuación, crearemos uno nuevo a partir de la misma imagen, pero con persi
 
 ![Creando un contenedor con persistencia](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/portainer/assets/persistent-container-portainer.png)
 
-Ponemos de nombre 'servidorwebpersistencia', elegimos la imagen 'nginx:latest', mapeamos el puerto 80 del contenedor al puerto 80 del servidor como ya hicimos previamente y pulsamos en 'map additional volume' para enlazar un volume persistente al contenedor. En concreto, le indicamos que la carpeta /usr/share/nginx/html del contenedor (que es la que contiene la web por defecto) la almacene en el volume webNginx que hemos creado anteriormente. Por último, pulsamos en 'Deploy the container'.
+Ponemos de nombre 'servidorwebpersistencia', elegimos la imagen 'nginx:latest', mapeamos el puerto 80 del contenedor al puerto 80 del servidor como ya hicimos previamente y en la pestaña 'Volumes' del bloque de opciones avanzadas pulsamos en 'map additional volume' para enlazar un volume persistente al contenedor. En concreto, le indicamos que la carpeta /usr/share/nginx/html del contenedor (que es la que contiene la web por defecto) la almacene en el volume webNginx que hemos creado anteriormente. Por último, pulsamos en 'Deploy the container'.
 
 Solo nos queda poner la página web de nuevo en este contenedor, como ya hicimos antes:
 
 `docker exec -it servidorwebpersistencia bash`{{execute}}
+
 `cd /usr/share/nginx/html`{{execute}}
+
 `rm *`{{execute}}
+
 `apt update`{{execute}}
-`apt install wget`{{execute}}
+
+`apt install wget -y`{{execute}}
+
 `wget https://davidlms.github.io/`{{execute}}
+
 `exit`{{execute}}
 
 Si accedemos a la dirección https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com (recargada convenientemente), veremos de nuevo la página web personalizada. Puedes probar a recrear este contenedor y comprobarás como, a diferencia del anterior, permanece la web intacta.
