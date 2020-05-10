@@ -20,3 +20,7 @@ Haz click en el siguiente comando para ejecutarlo en el Host 1 (cliente):
 Haz click en el siguiente comando para ejecutarlo en el Host 2 (servidor):
 
 `ip add`{{execute HOST2}}
+
+La IP es la que aparece a continuación de "inet" en la tarjeta de red "ens3" de cada uno de los hosts.
+
+En tu caso, la IP del cliente (Host 1) es [[HOST1_IP]] y la IP del servidor (Host 2) es [[HOST2_IP]]
