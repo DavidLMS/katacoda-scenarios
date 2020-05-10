@@ -22,3 +22,20 @@ Si escribimos **yes** agregará la clave del servidor a una lista segura. Si en 
 
 Prueba a escribir yes y se conectará al servidor.
 
+**Aparentemente**, no verás nada distinto, pero **los comandos que ejecutes en el cliente** (Host 1 superior), **será como si los ejecutases en el servidor** (Host 2 inferior). Para comprobarlo, vamos a **crear un archivo de prueba** en el servidor desde el cliente:
+
+`touch prueba`{{execute HOST1}}
+
+Y ahora vamos a **verificar** que se ha creado en el servidor:
+
+`ls`{{execute HOST2}}
+
+Si queremos **cerrar la conexión**, solamente tendremos que ejecutar en el cliente:
+
+`exit`{{execute HOST1}}
+
+Podemos ver que en el cliente no existe el archivo prueba:
+
+`ls`{{execute HOST1}}
+
+¡Ya puedes conectarte a otros ordenadores a través de la red! Usa tu poder con responsabilidad.
