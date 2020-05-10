@@ -1,0 +1,41 @@
+{
+  "title": "Práctica básica de SSH",
+  "description": "Aprende a instalar un servicio SSH para controlar remotamente un servidor y enviarle archivos de forma segura",
+  "difficulty": "Principiante",
+  "time": "30 minutos",
+  "details": {
+    "steps": [{
+      "title": "1 - ¿Qué es SSH?",
+      "text": "step1.md"
+    },
+	{
+	  "title": "2 - Preparación del servidor",
+	  "text": "step2.md"
+	},
+	{
+	  "title": "3 - Acceso al servidor desde un cliente",
+	  "text": "step3.md"
+	},
+	{
+	  "title": "4 - Envío de archivos desde el cliente al servidor",
+	  "text": "step4.md"
+	}
+	],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+	"showdashboard": false,
+    "uilayout": "terminal-terminal",
+    "uimessage1": "\u001b[32mEn esta terminal interactiva de Bash puedes ejecutar comandos en el cliente\u001b[m\r\n",
+	"uimessage2": "\u001b[32mEn esta terminal interactiva de Bash puedes ejecutar comandos en el servidor\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  }
+}
