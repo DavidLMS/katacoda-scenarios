@@ -30,8 +30,7 @@
     }
   },
   "environment": {
-	"showdashboard": false,
-    "uilayout": "terminal",
+    "uilayout": "terminal-terminal",
     "uimessage1": "\u001b[32mEn esta terminal interactiva de Bash puedes ejecutar comandos en el cliente\u001b[m\r\n"
   },
   "backend": {
