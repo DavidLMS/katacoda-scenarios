@@ -19,10 +19,6 @@
 	{
 	  "title": "4 - Intercambio de archivos entre cliente y servidor",
 	  "text": "step4.md"
-	},
-	{
-	  "title": "5 - Cambiar configuración SSH del servidor",
-	  "text": "step5.md"
 	}
 	],
     "intro": {
