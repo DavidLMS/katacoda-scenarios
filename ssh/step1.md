@@ -7,7 +7,7 @@ Para un administrador de sistemas, el **acceso remoto** es fundamental, ya que p
 
 El esquema de funcionamiento de este protocolo es muy sencillo:
 
-![Esquema de acceso remoto](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/ssh/assets/esquema-acceso-remoto.png)
+<center>![Esquema de acceso remoto](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/ssh/assets/esquema-acceso-remoto.png)</center>
 
 En el servidor instalaremos **el servicio SSH** que permita el control remoto. En el cliente, que servirá para controlar el servidor, instalaremos el **software cliente** que permitirá acceder al servidor.
 
