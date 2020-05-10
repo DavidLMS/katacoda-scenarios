@@ -23,4 +23,14 @@ Haz click en el siguiente comando para ejecutarlo en el Host 2 (servidor):
 
 La IP es la que aparece a continuación de "inet" en la tarjeta de red "ens3" de cada uno de los hosts.
 
-En tu caso, la IP del cliente (Host 1) es [[HOST_IP]] y la IP del servidor (Host 2) es [[HOST2_IP]]
+También debemos comprobar que un host tiene conectividad con el otro (porque sino, no podremos hacer una conexión SSH).
+
+Prueba a hacer ping desde el cliente (Host 1) al servidor (Host 2) usando el siguiente comando:
+
+`ping -c 4 [[HOST2_IP]]`{{execute HOST1}}
+
+Aunque no es necesario, también podrías hacer ping desde el servidor (Host 2) al cliente (Host 1) usando el siguiente comando:
+
+`ping -c 4 [[HOST_IP]]`{{execute HOST2}}
+
+Ya lo tenemos todo listo para comprender y realizar esta práctica. Continúa para preparar el servidor.
