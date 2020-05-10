@@ -31,11 +31,11 @@
   },
   "environment": {
 	"showdashboard": false,
-    "uilayout": "terminal-terminal",
+    "uilayout": "terminal",
     "uimessage1": "\u001b[32mEn esta terminal interactiva de Bash puedes ejecutar comandos en el cliente\u001b[m\r\n",
 	"uimessage2": "\u001b[32mEn esta terminal interactiva de Bash puedes ejecutar comandos en el servidor\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "ubuntu:2004"
+    "imageid": "ubuntu"
   }
 }
