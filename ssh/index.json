@@ -36,6 +36,6 @@
 	"uimessage2": "\u001b[32mEn esta terminal interactiva de Bash puedes ejecutar comandos en el servidor\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "ubuntu:1804"
+    "imageid": "ubuntu:2004"
   }
 }
