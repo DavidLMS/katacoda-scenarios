@@ -19,6 +19,10 @@
 	{
 	  "title": "4 - Envío de archivos desde el cliente al servidor",
 	  "text": "step4.md"
+	},
+	{
+	  "title": "5 - Cambiar configuración SSH del servidor",
+	  "text": "step5.md"
 	}
 	],
     "intro": {
