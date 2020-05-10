@@ -15,8 +15,8 @@ Primero debemos tener claro las direcciones IP de ambos hosts. Para ello, ejecut
 
 Haz click en el siguiente comando para ejecutarlo en el Host 1 (cliente):
 
-echo "Running a command on Host 1"{{execute HOST1}}
+`ip add`{{execute HOST1}}
 
 Haz click en el siguiente comando para ejecutarlo en el Host 2 (servidor):
 
-echo "Running a command on Host 2"{{execute HOST2}}
+`ip add`{{execute HOST2}}
