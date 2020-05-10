@@ -7,11 +7,13 @@ Para un administrador de sistemas, el **acceso remoto** es fundamental, ya que p
 
 El esquema de funcionamiento de este protocolo es muy sencillo:
 
+![Esquema de acceso remoto](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/ssh/assets/esquema-acceso-remoto.png)
+
 En el servidor instalaremos **el servicio SSH** que permita el control remoto. En el cliente, que servirá para controlar el servidor, instalaremos el **software cliente** que permitirá acceder al servidor.
 
 En esta práctica, **el servidor será el Host 2** (Terminal inferior) y **el cliente el Host 1** (Terminal superior). Accederemos, por tanto, al Host 2 desde el Host 1.
 
-Primero debemos tener claro las **direcciones IP** de ambos hosts. Para ello, ejecutamos el comando <pre>ip add</pre>.
+Primero debemos tener claro las **direcciones IP** de ambos hosts. Para ello, ejecutamos el comando **ip add**.
 
 Haz click en el siguiente comando para ejecutarlo en el Host 1 (cliente):
 
@@ -21,15 +23,15 @@ Haz click en el siguiente comando para ejecutarlo en el Host 2 (servidor):
 
 `ip add`{{execute HOST2}}
 
-La IP es la que aparece a continuación de <pre>inet</pre> en la tarjeta de red <pre>ens3</pre> de cada uno de los hosts.
+La IP es la que aparece a continuación de **inet** en la tarjeta de red **ens3** de cada uno de los hosts.
 
 También debemos comprobar que un host **tiene conectividad** con el otro (porque sino, no podremos hacer una conexión SSH).
 
-Prueba a hacer <pre>ping</pre> desde el cliente (Host 1) al servidor (Host 2) usando el siguiente comando:
+Prueba a hacer **ping** desde el cliente (Host 1) al servidor (Host 2) usando el siguiente comando:
 
 `ping -c 4 [[HOST2_IP]]`{{execute HOST1}}
 
-Aunque no es necesario, también podrías hacer <pre>ping</pre> desde el servidor (Host 2) al cliente (Host 1) usando el siguiente comando:
+Aunque no es necesario, también podrías hacer **ping** desde el servidor (Host 2) al cliente (Host 1) usando el siguiente comando:
 
 `ping -c 4 [[HOST_IP]]`{{execute HOST2}}
 
