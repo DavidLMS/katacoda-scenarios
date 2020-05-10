@@ -30,9 +30,8 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
-	"terminals": [{"name": "Hola", "target": "host01"},{"name": "adios", "target": "host02"}],
-    "uimessage1": "\u001b[32mEn esta terminal interactiva de Bash puedes ejecutar comandos\u001b[m\r\n"
+    "uilayout": "terminal-terminal",
+    "uimessage1": "\u001b[32mEn esta terminal interactiva de Ubuntu puedes ejecutar comandos\u001b[m\r\n"
 	
   },
   "backend": {
