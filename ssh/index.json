@@ -1,5 +1,5 @@
 {
-  "title": "Práctica básica de SSH",
+  "title": "Introducción al control remoto con SSH",
   "description": "Aprende a instalar un servicio SSH para controlar remotamente un servidor y enviarle archivos de forma segura",
   "difficulty": "Principiante",
   "time": "30 minutos",
