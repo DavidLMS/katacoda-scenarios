@@ -34,7 +34,7 @@
   },
   "environment": {
 	"showdashboard": true,
-	"dashboards": [{"name": "Cliente FTP", "port": 80}]
+	"dashboards": [{"name": "Cliente FTP", "port": 80}],
     "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mEn esta terminal interactiva de Ubuntu puedes ejecutar comandos\u001b[m\r\n"
 	
