@@ -29,7 +29,7 @@
       "text": "finish.md"
     },
 	"assets": {
-		"host01": [ {"file": "index.php", "target": "/root"} ]
+		"host01": [ {"file": "monsta_ftp_2.10.1_install.zip", "target": "/var/www/html"} ]
 	}
   },
   "environment": {
