@@ -1,14 +1,10 @@
 #!/bin/bash
-apt update
-wait 5
-apt install nginx -y
-wait 5
-apt install php -y
-wait 5
-cd /var/www/html/
-wget https://github.com/DavidLMS/katacoda-scenarios/raw/master/ftp/assets/monsta_ftp_2.10.1_install.zip
-wait 3
-unzip monsta_ftp_2.10.1_install.zip
-cp -R mftp/* ./
-rm -R mftp
-rm monsta_ftp_2.10.1_install.zip
+nohup apt update
+nohup apt install nginx -y
+nohup apt install php -y
+nohup cd /var/www/html/
+nohup wget https://github.com/DavidLMS/katacoda-scenarios/raw/master/ftp/assets/monsta_ftp_2.10.1_install.zip
+nohup unzip monsta_ftp_2.10.1_install.zip
+nohup cp -R mftp/* ./
+nohup rm -R mftp
+nohup rm monsta_ftp_2.10.1_install.zip
