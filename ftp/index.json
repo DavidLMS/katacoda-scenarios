@@ -29,7 +29,7 @@
       "text": "finish.md"
     },
 	"assets": {
-		"host01": [ {"file": "*", "target": "/root"} ]
+		"host01": [ {"file": "index.php", "target": "/root"} ]
 	}
   },
   "environment": {
