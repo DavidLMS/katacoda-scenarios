@@ -40,14 +40,16 @@ Ya lo tenemos todo listo para comprender y realizar esta práctica. Continúa pa
 APUNTES
 apt update
 
-apt install vsftpd
+apt install vsftpd -y
 useradd -g ftp -s /bin/bash usuarioftp
 passwd usuarioftp
 mkdir /home/usuarioftp
+chown -R usuarioftp:ftp /home/usuarioftp
 
 apt install nginx -y
 apt install php -y
 cd /var/www/html/
+wget https://github.com/DavidLMS/katacoda-scenarios/raw/master/ftp/assets/monsta_ftp_2.10.1_install.zip
 unzip monsta_ftp_2.10.1_install.zip
 cp -R mftp/* ./
 rm -R mftp
