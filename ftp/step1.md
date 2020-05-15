@@ -36,3 +36,22 @@ Aunque no es necesario, también podrías hacer **ping** desde el servidor (Host
 `ping -c 4 [[HOST_IP]]`{{execute HOST2}}
 
 Ya lo tenemos todo listo para comprender y realizar esta práctica. Continúa para preparar el servidor.
+
+APUNTES
+apt update
+
+apt install vsftpd
+useradd -g ftp -s /bin/bash usuarioftp
+passwd usuarioftp
+mkdir /home/usuarioftp
+
+apt install nginx -y
+apt install php -y
+cd /var/www/html/
+unzip monsta_ftp_2.10.1_install.zip
+cp -R mftp/* ./
+rm -R mftp
+rm monsta_ftp_2.10.1_install.zip
+
+nano /etc/nginx/sites-enabled/default -> Añadir index.php a la lista y descomentar lo de PHP (segunda opción)
+service nginx restart
