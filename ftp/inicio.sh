@@ -7,3 +7,4 @@ nohup rm /etc/nginx/sites-available/default
 nohup wget -P /etc/nginx/sites-available https://github.com/DavidLMS/katacoda-scenarios/raw/master/ftp/assets/default
 nohup unzip /var/www/html/monsta_ftp_2.10.1_install.zip -d /var/www/html
 nohup service nginx restart
+echo "done" >> /opt/.backgroundfinished
