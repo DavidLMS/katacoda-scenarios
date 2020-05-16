@@ -44,6 +44,6 @@
     "uimessage1": "\u001b[32mEn esta terminal interactiva de Ubuntu puedes ejecutar comandos\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "docker-swarm"
   }
 }
