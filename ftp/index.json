@@ -34,7 +34,7 @@
 	            "host01": [
 	                {"file": "espera.sh", "target": "/usr/local/bin/", "chmod": "+x"}
 	            ]
-			},
+			}
   },
   "environment": {
 	"showdashboard": true,
