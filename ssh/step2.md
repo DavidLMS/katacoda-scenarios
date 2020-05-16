@@ -7,3 +7,11 @@ Para **comprobar** que el servicio se está ejecutando correctamente, utilizarem
 `sudo service ssh status`{{execute HOST2}}
 
 Si aparece **active (running)** en verde, es que el servicio está en ejecución, por lo que podríamos conectarnos desde cualquier cliente para controlar ese host remotamente.
+
+APUNTES
+
+apt install vsftpd -y
+useradd -g ftp -s /bin/bash usuarioftp
+passwd usuarioftp
+mkdir /home/usuarioftp
+chown -R usuarioftp:ftp /home/usuarioftp
