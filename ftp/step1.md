@@ -18,7 +18,7 @@ Haz click en el siguiente comando para ejecutarlo en el cliente:
 
 Haz click en el siguiente comando para ejecutarlo en el servidor:
 
-`ip add`{{execute HOST}}
+`ip add`{{execute HOST1}}
 
 La IP es la que aparece a continuación de **inet** en la tarjeta de red **ens3** de cada uno de los hosts.
 
@@ -30,6 +30,6 @@ Prueba a hacer **ping** desde el cliente al servidor usando el siguiente comando
 
 Aunque no es necesario, también podrías hacer **ping** desde el servidor al cliente usando el siguiente comando:
 
-`ping -c 4 [[HOST2_IP]]`{{execute HOST}}
+`ping -c 4 [[HOST2_IP]]`{{execute HOST1}}
 
 Ya lo tenemos todo listo para comprender y realizar esta práctica. Continúa para preparar el servidor.
