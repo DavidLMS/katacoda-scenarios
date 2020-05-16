@@ -21,6 +21,11 @@
 	  "text": "step4.md"
 	}
 	],
+	"assets": {
+	            "host01": [
+	                {"file": "espera.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+	            ]
+			},
     "intro": {
       "text": "intro.md",
       "credits": "",
