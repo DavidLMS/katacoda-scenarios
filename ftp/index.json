@@ -38,7 +38,8 @@
   },
   "environment": {
 	"showdashboard": true,
-	"dashboards": [{"name": "Cliente consola", "host": "host02"},{"name": "Cliente web", "port": 80}],
+	"terminals": [{"name": "Cliente consola", "target": "host02"}],
+	"dashboards": [{"name": "Cliente web", "port": 80}],
     "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mEn esta terminal interactiva de Ubuntu puedes ejecutar comandos\u001b[m\r\n"
   },
