@@ -1,15 +1,12 @@
-Para un administrador de sistemas, el **acceso remoto** es fundamental, ya que permite:
+**FTP** es un protocolo de servicio de transferencia de ficheros que permite **intercambiar archivos** entre uno o varios clientes y un servidor. En resumen, un cliente puede **solicitar** al servidor **subir un archivo** a una carpeta del mismo o **descargar alguno** que se encuentre previamente disponible en el dispositivo.
 
-* Administrar y resolver problemas en un servidor o equipo sin necesidad de estar físicamente presente.
-* Asesorar y ofrecer apoyo técnico, así como soluciones de problemas informáticos a usuarios, sin realizar ningún desplazamiento.
-
-**SSH** (Secure Shell) es un **protocolo** de acceso remoto por **línea de comandos** seguro, en el que la comunicación se encuentra **cifrada**. Por defecto, la conexión se realiza a través del puerto **22 TCP**.
+El protocolo FTP trabaja en la capa de Aplicación, usando **TCP** para el transporte. Concretamente, **utiliza dos puertos TCP, uno para la conexión de control y otro para la conexión de datos**. Funciona **independientemente del sistema operativo** utilizado en el cliente y el servidor.
 
 El esquema de funcionamiento de este protocolo es muy sencillo:
 
-<center>![Esquema de acceso remoto](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/ssh/assets/esquema-acceso-remoto.png)</center>
+<center>![Esquema de acceso remoto](https://raw.githubusercontent.com/DavidLMS/katacoda-scenarios/master/ftp/assets/esquemaserviciotransferencia.png)</center>
 
-En el servidor instalaremos **el servicio SSH** que permita el control remoto. En el cliente, que servirá para controlar el servidor, instalaremos el **software cliente** que permitirá acceder al servidor.
+En el servidor instalaremos **el servicio FTP** que permita el control remoto. En el cliente, que servirá para controlar el servidor, instalaremos el **software cliente** que permitirá acceder al servidor.
 
 En esta práctica, **el servidor será el Host 2** (Terminal inferior) y **el cliente el Host 1** (Terminal superior). Accederemos, por tanto, al Host 2 desde el Host 1.
 
