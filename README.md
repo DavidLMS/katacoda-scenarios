@@ -1,10 +1,13 @@
-# Interactive Katacoda Scenarios
+# Escenarios Interactivos en Katacoda
 
-[![](http://shields.katacoda.com/katacoda/davidlms/count.svg)](https://www.katacoda.com/davidlms "Get your profile on Katacoda.com")
+[![](http://shields.katacoda.com/katacoda/davidlms/count.svg)](https://www.katacoda.com/davidlms "Crea tu perfil en Katacoda.com")
 
-Visit https://www.katacoda.com/davidlms to view the profile and interactive scenarios
+Visita https://www.katacoda.com/davidlms para ver el perfil y realizar los escenarios de este repositorio. 
 
-### Writing Scenarios
-Visit https://www.katacoda.com/docs to learn more about creating Katacoda scenarios
+### Creando escenarios
+Visita https://www.katacoda.com/docs para aprender sobre la creación de escenarios en Katacoda.
 
-For examples, visit https://github.com/katacoda/scenario-example
+Para ver otros ejemplos de escenarios, visita https://github.com/katacoda/scenario-example
+
+### ¿Quieres colaborar?
+Este repositorio está abierto a colaboraciones, solamente tienes que hacer un pull request con los cambios deseados.
