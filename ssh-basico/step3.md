@@ -20,9 +20,7 @@ Are you sure you want to continue connecting (yes/no)?</pre>
 
 Si escribimos **yes** agregará la clave del servidor a una lista segura. Si en algún momento el host que tiene esa IP cambia, detectará que no es el mismo equipo y aparecerá un mensaje denegándote la conexión por seguridad.
 
-Prueba a escribir yes y se conectará al servidor:
-
-`yes`{{execute HOST1}}
+Si te ha salido el mensaje, prueba a escribir yes y se conectará al servidor.
 
 **Aparentemente**, no verás nada distinto, pero **los comandos que ejecutes en el cliente** (Host 1 superior), **será como si los ejecutases en el servidor** (Host 2 inferior). Para comprobarlo, vamos a **crear un archivo de prueba** en el servidor desde el cliente:
 
