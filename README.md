@@ -12,5 +12,3 @@ Para ver otros ejemplos de escenarios, visita https://github.com/katacoda/scenar
 ### ¿Quieres colaborar?
 Este repositorio está abierto a colaboraciones, solamente tienes que hacer un pull request con los cambios deseados.
 
-## FIN2
-
